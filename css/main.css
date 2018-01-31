@@ -1,0 +1,24 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   .jumbotron {
+       margin-top: -20px;
+       background: url('../img/cover.jpg') no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       color: white;
+       height: 500px;
+   }
+
+
+   
+   
+.profile-photo img{
+    width: 100px;
+    height: auto;
+    margin: 0px auto;
+   }
