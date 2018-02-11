@@ -11,9 +11,18 @@
        -o-background-size: cover;
        background-size: cover;
        color: white;
-       height: 400px;
+       min-height: 400px;
    }
 
+.navbar-toggle {
+    background-color:#337ab7;
+}
+
+
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
 .profile-photo img{
     width: 100px;
     height: auto;
@@ -146,4 +155,13 @@ section p {
 .navbar-nav li .active
 {
     background-color: #EEEEEE;
+}
+
+.per {
+    font-size: 18px !important;
+}
+
+.calculator-heading { 
+    width: 180px;
+    margin: 0px auto;
 }
