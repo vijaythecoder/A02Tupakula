@@ -65,13 +65,13 @@
                 <div class="col-md-6">
                     <fieldset class="form-group">
                     <label for="subject" class="control-label">Start Date</label>
-                    <input type="email" class="form-control start-date" id="name" placeholder="Select start date">
+                    <input type="text" class="form-control start-date" id="name" placeholder="Select start date">
                 </fieldset>
                 </div>
                 <div class="col-md-6">
                     <fieldset class="form-group">
                     <label for="subject" class="control-label">End Date Date</label>
-                    <input type="email" class="form-control end-date" id="name" placeholder="Select end date">
+                    <input type="text" class="form-control end-date" id="name" placeholder="Select end date">
                 </fieldset>
                 </div>
                 <div class="col-md-6">
@@ -130,35 +130,5 @@
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 </script>
-
-<script>
-  $(document).ready(function () {
-
-    $('#sandbox-container .input-daterange').datepicker();
-    // $('.start-date').on('change', calculateDays)
-    // $('.end-date').on('change', calculateDays)
-    $('.calculate').on('click', function () {
-      if ($('.start-date').val() === '' || $('.end-date').val() === '') {
-        alert('Start and End dates are required');
-        return;
-      }
-      var date1 = new Date($('.start-date').val());
-      
-      var date2 = new Date($('.end-date').val());
-      var timeDiff = Math.abs(date2.getTime() - date1.getTime());
-      var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
-      if (diffDays === 0) {
-        alert('Start date and End date cannot be equal')
-        return
-      }
-      $('.rooms-selected').html($('.rooms').val())
-      $('.days-selected').html(diffDays)
-      $('.final-price').html('$' + $('.rooms').val() * diffDays * 120)
-
-    })
-    
-  })
-</script>
-
 </body>
 </html>
